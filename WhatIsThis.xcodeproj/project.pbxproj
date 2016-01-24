@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		472E1CC31C545B31005E3FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472E1CC21C545B31005E3FE0 /* main.m */; };
 		472E1CC61C545B31005E3FE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472E1CC51C545B31005E3FE0 /* AppDelegate.m */; };
-		472E1CC91C545B31005E3FE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472E1CC81C545B31005E3FE0 /* ViewController.m */; };
+		472E1CC91C545B31005E3FE0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 472E1CC81C545B31005E3FE0 /* ViewController.mm */; };
 		472E1CCC1C545B31005E3FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CCA1C545B31005E3FE0 /* Main.storyboard */; };
 		472E1CCE1C545B31005E3FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CCD1C545B31005E3FE0 /* Assets.xcassets */; };
 		472E1CD11C545B31005E3FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CCF1C545B31005E3FE0 /* LaunchScreen.storyboard */; };
+		472E1CDB1C545B53005E3FE0 /* mxnet_predict-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 472E1CD91C545B53005E3FE0 /* mxnet_predict-all.cc */; };
+		472E1CDD1C545B9A005E3FE0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472E1CDC1C545B9A005E3FE0 /* Accelerate.framework */; };
+		472E1CE31C546859005E3FE0 /* Inception_BN-0039.params in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CDF1C546859005E3FE0 /* Inception_BN-0039.params */; };
+		472E1CE41C546859005E3FE0 /* Inception_BN-symbol.json in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CE01C546859005E3FE0 /* Inception_BN-symbol.json */; };
+		472E1CE61C546859005E3FE0 /* synset.txt in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CE21C546859005E3FE0 /* synset.txt */; };
+		472E1CE81C546868005E3FE0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CE71C546868005E3FE0 /* LICENSE */; };
+		472E1CEB1C5478A5005E3FE0 /* mean_224.bin in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CEA1C5478A5005E3FE0 /* mean_224.bin */; };
+		472E1CED1C5484FA005E3FE0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 472E1CEC1C5484FA005E3FE0 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +29,20 @@
 		472E1CC41C545B31005E3FE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		472E1CC51C545B31005E3FE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		472E1CC71C545B31005E3FE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		472E1CC81C545B31005E3FE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		472E1CC81C545B31005E3FE0 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		472E1CCB1C545B31005E3FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		472E1CCD1C545B31005E3FE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472E1CD01C545B31005E3FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472E1CD21C545B31005E3FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472E1CD91C545B53005E3FE0 /* mxnet_predict-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mxnet_predict-all.cc"; sourceTree = "<group>"; };
+		472E1CDA1C545B53005E3FE0 /* c_predict_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_predict_api.h; sourceTree = "<group>"; };
+		472E1CDC1C545B9A005E3FE0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		472E1CDF1C546859005E3FE0 /* Inception_BN-0039.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inception_BN-0039.params"; sourceTree = "<group>"; };
+		472E1CE01C546859005E3FE0 /* Inception_BN-symbol.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Inception_BN-symbol.json"; sourceTree = "<group>"; };
+		472E1CE21C546859005E3FE0 /* synset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = synset.txt; sourceTree = "<group>"; };
+		472E1CE71C546868005E3FE0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		472E1CEA1C5478A5005E3FE0 /* mean_224.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = mean_224.bin; sourceTree = "<group>"; };
+		472E1CEC1C5484FA005E3FE0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472E1CDD1C545B9A005E3FE0 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 		472E1CB51C545B31005E3FE0 = {
 			isa = PBXGroup;
 			children = (
+				472E1CDC1C545B9A005E3FE0 /* Accelerate.framework */,
 				472E1CC01C545B31005E3FE0 /* WhatIsThis */,
 				472E1CBF1C545B31005E3FE0 /* Products */,
 			);
@@ -58,10 +77,12 @@
 		472E1CC01C545B31005E3FE0 /* WhatIsThis */ = {
 			isa = PBXGroup;
 			children = (
+				472E1CDE1C546859005E3FE0 /* Inception */,
+				472E1CD81C545B4E005E3FE0 /* MXNet */,
 				472E1CC41C545B31005E3FE0 /* AppDelegate.h */,
 				472E1CC51C545B31005E3FE0 /* AppDelegate.m */,
 				472E1CC71C545B31005E3FE0 /* ViewController.h */,
-				472E1CC81C545B31005E3FE0 /* ViewController.m */,
+				472E1CC81C545B31005E3FE0 /* ViewController.mm */,
 				472E1CCA1C545B31005E3FE0 /* Main.storyboard */,
 				472E1CCD1C545B31005E3FE0 /* Assets.xcassets */,
 				472E1CCF1C545B31005E3FE0 /* LaunchScreen.storyboard */,
@@ -77,6 +98,28 @@
 				472E1CC21C545B31005E3FE0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472E1CD81C545B4E005E3FE0 /* MXNet */ = {
+			isa = PBXGroup;
+			children = (
+				472E1CEC1C5484FA005E3FE0 /* LICENSE */,
+				472E1CD91C545B53005E3FE0 /* mxnet_predict-all.cc */,
+				472E1CDA1C545B53005E3FE0 /* c_predict_api.h */,
+			);
+			path = MXNet;
+			sourceTree = "<group>";
+		};
+		472E1CDE1C546859005E3FE0 /* Inception */ = {
+			isa = PBXGroup;
+			children = (
+				472E1CE71C546868005E3FE0 /* LICENSE */,
+				472E1CDF1C546859005E3FE0 /* Inception_BN-0039.params */,
+				472E1CE01C546859005E3FE0 /* Inception_BN-symbol.json */,
+				472E1CEA1C5478A5005E3FE0 /* mean_224.bin */,
+				472E1CE21C546859005E3FE0 /* synset.txt */,
+			);
+			path = Inception;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +153,7 @@
 				TargetAttributes = {
 					472E1CBD1C545B31005E3FE0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5GDAS3SADT;
 					};
 				};
 			};
@@ -137,8 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				472E1CD11C545B31005E3FE0 /* LaunchScreen.storyboard in Resources */,
+				472E1CE81C546868005E3FE0 /* LICENSE in Resources */,
+				472E1CE41C546859005E3FE0 /* Inception_BN-symbol.json in Resources */,
+				472E1CEB1C5478A5005E3FE0 /* mean_224.bin in Resources */,
 				472E1CCE1C545B31005E3FE0 /* Assets.xcassets in Resources */,
+				472E1CE61C546859005E3FE0 /* synset.txt in Resources */,
+				472E1CED1C5484FA005E3FE0 /* LICENSE in Resources */,
 				472E1CCC1C545B31005E3FE0 /* Main.storyboard in Resources */,
+				472E1CE31C546859005E3FE0 /* Inception_BN-0039.params in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				472E1CC91C545B31005E3FE0 /* ViewController.m in Sources */,
+				472E1CDB1C545B53005E3FE0 /* mxnet_predict-all.cc in Sources */,
+				472E1CC91C545B31005E3FE0 /* ViewController.mm in Sources */,
 				472E1CC61C545B31005E3FE0 /* AppDelegate.m in Sources */,
 				472E1CC31C545B31005E3FE0 /* main.m in Sources */,
 			);
@@ -261,10 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WhatIsThis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HL.DL.WhatIsThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WhatIsThis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HL.DL.WhatIsThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

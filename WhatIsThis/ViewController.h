@@ -7,8 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "c_predict_api.h"
+#import <vector>
 
-@interface ViewController : UIViewController
+#define kDefaultWidth 224
+#define kDefaultHeight 224
+#define kDefaultChannels 3
+#define kDefaultImageSize (kDefaultWidth*kDefaultHeight*kDefaultChannels)
+
+@interface ViewController : UIViewController {
+    
+    PredictorHandle predictor;
+    
+    NSString *model_symbol;
+    NSData *model_params;
+    NSMutableArray *model_synset;
+    float model_mean[kDefaultImageSize];
+    UIImage *meanImage;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *labelDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewPhoto;
 
 
 @end
