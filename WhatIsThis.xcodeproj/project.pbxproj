@@ -319,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HL.DL.WhatIsThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				WARNING_CFLAGS = "-fms-extensions";
 			};
 			name = Debug;
 		};
@@ -333,6 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HL.DL.WhatIsThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				WARNING_CFLAGS = "-fms-extensions";
 			};
 			name = Release;
 		};
@@ -355,6 +357,7 @@
 				472E1CD71C545B31005E3FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
